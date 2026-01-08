@@ -1,3 +1,4 @@
+import TransitionLink from '@/components/TransitionLink';
 import { IProject } from '@/types';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
