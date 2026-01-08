@@ -1,5 +1,3 @@
-import TransitionLink from '@/components/TransitionLink';
-import { cn } from '@/lib/utils';
 import { IProject } from '@/types';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -30,7 +28,7 @@ interface Props {
 
 gsap.registerPlugin(useGSAP);
 
-const Project = ({ index, project, selectedProject: _selectedProject, onMouseEnter }: Props) => {
+const Project = ({ index, project, onMouseEnter }: Props) => {
     const externalLinkSVGRef = useRef<SVGSVGElement>(null);
 
     const { context, contextSafe } = useGSAP(() => {}, {
